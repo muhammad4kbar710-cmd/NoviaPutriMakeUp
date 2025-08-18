@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Novia Putri MUA - Makeup Artist untuk bridal, engagement, wisuda, party, dan event lainnya.">
+  <meta name="keywords" content="MUA, makeup, wedding, engagement, wisuda, Jakarta">
+  <meta name="author" content="Novia Putri">
+  <link rel="icon" href="https://i.imgur.com/OU9kLE7.png" type="image/png">
+  <title>Novia Putri MUA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">Novia Putri MUA</h1>
+      <nav class="space-x-4">
+        <a href="#services" class="hover:text-pink-600">Layanan</a>
+        <a href="#gallery" class="hover:text-pink-600">Galeri</a>
+        <a href="#booking" class="hover:text-pink-600">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://picsum.photos/1200/500?random=1" class="w-full" alt="Makeup 1"></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/1200/500?random=2" class="w-full" alt="Makeup 2"></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/1200/500?random=3" class="w-full" alt="Makeup 3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="services" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Layanan Kami</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Bridal Makeup</h3>
+        <p>Riasan elegan untuk hari pernikahan Anda.</p>
+        <p class="mt-2 font-bold text-pink-600">Rp 3.500.000</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Engagement</h3>
+        <p>Riasan cantik untuk acara lamaran.</p>
+        <p class="mt-2 font-bold text-pink-600">Rp 2.000.000</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Wisuda / Party</h3>
+        <p>Makeup flawless untuk acara spesial.</p>
+        <p class="mt-2 font-bold text-pink-600">Rp 750.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Galeri</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://picsum.photos/400/400?random=11" alt="Gallery 1" class="rounded-lg shadow">
+        <img src="https://picsum.photos/400/400?random=12" alt="Gallery 2" class="rounded-lg shadow">
+        <img src="https://picsum.photos/400/400?random=13" alt="Gallery 3" class="rounded-lg shadow">
+        <img src="https://picsum.photos/400/400?random=14" alt="Gallery 4" class="rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="max-w-2xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Booking Sekarang</h2>
+    <form action="https://wa.me/62895401100209" method="get" target="_blank" class="bg-white p-6 rounded-2xl shadow space-y-4">
+      <input type="text" name="name" placeholder="Nama Anda" class="w-full border rounded-lg p-3" required>
+      <input type="date" name="date" class="w-full border rounded-lg p-3" required>
+      <textarea name="message" rows="4" placeholder="Pesan Anda" class="w-full border rounded-lg p-3"></textarea>
+      <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700">Pesan via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer class="bg-pink-600 text-white py-6 text-center">
+    <p>&copy; 2025 Novia Putri MUA. All rights reserved.</p>
+    <p>
+      <a href="https://instagram.com/noviaputrimakeup" target="_blank" class="underline">@noviaputrimakeup</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: ".swiper-pagination", clickable: true }
+    });
+  </script>
+</body>
+</html>
